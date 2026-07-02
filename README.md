@@ -60,21 +60,13 @@ Robot Animation
 
 For a two-link planar manipulator,
 
-\[
-x_1=L_1\cos\theta_1
-\]
+$x_1 = L_1\cos\theta_1$
 
-\[
-y_1=L_1\sin\theta_1
-\]
+$y_1 = L_1\sin\theta_1$
 
-\[
-x=x_1+L_2\cos(\theta_1+\theta_2)
-\]
+$x_2 = x_1 + L_2\cos(\theta_1 + \theta_2)$
 
-\[
-y=y_1+L_2\sin(\theta_1+\theta_2)
-\]
+$y_2 = y_1 + L_2\sin(\theta_1 + \theta_2)$
 
 ---
 
@@ -82,17 +74,11 @@ y=y_1+L_2\sin(\theta_1+\theta_2)
 
 The joint angles are computed using
 
-\[
-D=\frac{x^2+y^2-L_1^2-L_2^2}{2L_1L_2}
-\]
+$D=\frac{x^2+y^2-L_1^2-L_2^2}{2L_1L_2}$
 
-\[
-\theta_2=\operatorname{atan2}\left(-\sqrt{1-D^2},D\right)
-\]
+$\theta_2=\operatorname{atan2}\left(-\sqrt{1-D^2},D\right)$
 
-\[
-\theta_1=\operatorname{atan2}(y,x)-\operatorname{atan2}(L_2\sin\theta_2,L_1+L_2\cos\theta_2)
-\]
+$\theta_1=\operatorname{atan2}(y,x)-\operatorname{atan2}(L_2\sin\theta_2,L_1+L_2\cos\theta_2)$
 
 ---
 
@@ -128,6 +114,7 @@ python main.py
 
 ## Video Demonstration
 
+<video src="logo_tracker_recording.webm" controls="controls" style="max-width: 100%;"></video>
 
 ---
 
