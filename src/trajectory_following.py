@@ -2,6 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from forward_kinematics import fk
 from inverse_kinematics import ik
+from image_processing import get_all_contours
+
 
 points = [
     (100, 50),
